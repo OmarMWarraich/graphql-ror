@@ -5,3 +5,38 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+taylor = Artist.create!(
+    email: "taylor.swift@example.com",
+    first_name: "Taylor",
+    last_name: "Swift"
+)
+
+Item.create!(
+    [
+        {
+            title: "Red (Taylor's Version)",
+            artist: taylor,
+            description: "Loving him is like driving a new Maserati down a dead-end street",
+            image_url: "https://static.wikia.nocookie.net/taylor-swift/images/9/93/Red_%28Taylor%27s_Version%29.jpeg/revision/latest/scale-to-width-down/1000?cb=20210618181243"
+        },
+        {
+            title: "All Too Well (Taylor's Version)",
+            artist: taylor,
+            description: "It was rare, I was there, I remember it all too well",
+            image_url: "https://static.wikia.nocookie.net/taylor-swift/images/9/93/Red_%28Taylor%27s_Version%29.jpeg/revision/latest/scale-to-width-down/1000?cb=20210618181243"
+        },
+        {
+            title: "We Are Never Ever Getting Back Together (Taylor's Version)",
+            artist: taylor,
+            description: "You go talk to your friends, talk to my friends, talk to me",
+            image_url: "https://static.wikia.nocookie.net/taylor-swift/images/9/93/Red_%28Taylor%27s_Version%29.jpeg/revision/latest/scale-to-width-down/1000?cb=20210618181243"
+        },
+        {
+            title: "Begin Again (Taylor's Version)",
+            artist: taylor,
+            description: "But on Wednesday in a cafe, I watched you walk away",
+            image_url: "https://static.wikia.nocookie.net/taylor-swift/images/9/93/Red_%28Taylor%27s_Version%29.jpeg/revision/latest/scale-to-width-down/1000?cb=20210618181243"
+        }
+    ]
+)
